@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
-/* font-family: "Dancing Script", cursive; */
 * {
     font-family: "Inter", sans-serif;
-    background: rgb(0, 0, 0);
-    color: white;
     margin: 0;
     padding: 0;
 }
 
+/* shared-style */
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.dark-mood {
+    background-color: black;
+    color: white;
+}
+
+#orange-color {
+    background: rgb(230, 83, 60);
+}
+
 .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 900;
 }
 
 .title-description {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
@@ -26,67 +38,58 @@
 
 button {
     border-radius: 2rem;
-    padding: 0.9rem 2.5rem;
+    padding: 1rem 3.5rem;
     background: rgb(230, 83, 60);
     border: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
-}
-
-/* shared-style */
-.container {
-    max-width: 1060px;
-    margin: 20px auto;
+    color: white;
 }
 
 /* header-section */
-/* header {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-    height: 700px;
-} */
+header {
+    background: linear-gradient(360.00deg, rgb(17, 17, 17), rgba(0, 0, 0, 0.8) 100%);
+    color: white;
+}
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2rem;
+    padding: 2rem 0;
 }
 
 .nav-title {
     font-size: 2rem;
+    color: rgb(230, 83, 60);
 }
 
 .nav-items {
     display: flex;
-    gap: 3rem;
-    /* font-size: 1.1rem; */
+    gap: 1rem;
     box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 39px;
-    padding: 1rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 3rem;
+}
 
+.nav-items button {
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .header-info {
     display: flex;
-    padding: 3rem;
-    /* margin-right: 3rem; */
+    padding: 3rem 0;
 }
-
-.header-info-div {
-    display: flex;
-    width: calc(1060px/2);
-    padding: 3rem;
-}
-
-.header-info-left {}
 
 .header-info-left h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 900;
-    line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
+    line-height: 120%;
 }
 
 .header-info-left p {
@@ -96,21 +99,18 @@ nav {
 
 span {
     font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 6rem;
 }
 
 .header-info-right {
-    /* box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    backdrop-filter: blur(20px); */
-    background: rgba(255, 255, 255, 0.1);
     background-image: url("images/Images\ 2.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 100%;
+    width: 90%;
     height: 500px;
-
+    margin-left: 5rem;
 }
 
 /* main-section */
@@ -128,7 +128,6 @@ span {
 
 .habits {
     display: flex;
-
 }
 
 .habit {
@@ -138,6 +137,7 @@ span {
 }
 
 .habit img {
+    border: 0.1rem solid grey;
     border-radius: 50%;
     margin-bottom: 2rem;
 }
@@ -146,6 +146,160 @@ span {
     font-size: 1.1rem;
     margin: 0.5rem;
     text-align: center;
+}
 
+/* run-section */
+.run-section {
+    background: rgb(34, 34, 34);
+    display: flex;
+    gap: 15rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
 
+.run-section p {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.run-img {
+    background-image: url("images/run.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+/* exercise-section */
+.exercise-section {
+
+    padding: 3rem 0;
+
+}
+
+.row-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.3fr;
+
+}
+
+.row-1 img,
+.row-2 img {
+    width: 100%;
+    height: 220px;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.3fr;
+}
+
+/* team-section */
+.team-section {
+    background: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 15rem; */
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.team-section p {
+    margin-bottom: 3rem;
+    /* text-align: left; */
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.member {
+    position: relative;
+}
+
+.member h3 {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+
+.member p {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.team-members img {
+
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+/* footer-section */
+footer {
+    background: rgb(34, 34, 34);
+    padding: 3rem;
+    color: white;
+    /* margin-top: 3rem; */
+}
+
+.footer-div {
+    display: flex;
+    gap: 10rem;
+    /* justify-content: flex-start; */
+}
+
+.div-1 {
+    width: 50%;
+}
+
+.div-1 h2 {
+    color: rgb(230, 83, 60);
+    font-size: 4rem;
+}
+
+.div-1 p {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.div-2 {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.get-started h4 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.get-started p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 0.3px;
+    text-align: left;
+
+}
+
+.footer-div-p {
+    font-size: 1.1rem;
+}
+
+hr {
+    margin: 3rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
