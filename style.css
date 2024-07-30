@@ -48,7 +48,7 @@ button {
 
 /* header-section */
 header {
-    background: linear-gradient(360.00deg, rgb(17, 17, 17), rgba(0, 0, 0, 0.8) 100%);
+    background-image: linear-gradient(to bottom, rgb(17, 17, 17), rgb(48, 46, 46), rgb(17, 17, 17));
     color: white;
 }
 
@@ -78,6 +78,10 @@ nav {
     background: none;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.nav-bars {
+    display: none;
 }
 
 .header-info {
@@ -116,7 +120,7 @@ span {
     background-position: center;
     width: 90%;
     height: 500px;
-    margin-left: 5rem;
+    margin-left: 3rem;
     position: relative;
 }
 
@@ -133,20 +137,35 @@ span {
 
 .workout-video {
     position: absolute;
-    padding: 1rem;
-    top: 30%;
-    left: 50%;
+    padding: 0.8rem 1rem;
+    top: 20%;
+    left: 60%;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .tutorial-video {
     position: absolute;
-    padding: 2rem;
-    top: 60%;
-    left: 10%;
+    padding: 0.8rem 1rem;
+    top: 75%;
+    /* left: 10%; */
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+}
+
+.tutorial-video h3 {
+    font-size: 1.5rem;
+}
+
+.red-circle {
+    width: 30px;
+    height: 30px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
 }
 
 /* main-section */
@@ -435,4 +454,349 @@ footer {
 hr {
     margin: 3rem auto;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    button {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav-bars {
+        display: block;
+    }
+
+    .header-info {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .header-info-left h1 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .header-info-left p {
+        width: 60%;
+    }
+
+    span {
+        font-size: 3rem;
+    }
+
+    .header-info-right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header-info-right h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .header-info-right p {
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    .workout-video {
+        padding: 0.5rem 0.8rem;
+        top: 10%;
+        left: 60%;
+    }
+
+    .tutorial-video {
+        padding: 0.5rem 0.8rem;
+        top: 50%;
+    }
+
+    .tutorial-video h3 {
+        font-size: 1rem;
+    }
+
+    /* main-section */
+    .habits-section {
+        padding: 0;
+    }
+
+    .p-width {
+        width: 80%;
+    }
+
+    .habits {
+        flex-direction: column;
+    }
+
+    .habit {
+        padding: 1.5rem 10rem;
+    }
+
+    .habit img {
+        margin-bottom: 1rem;
+    }
+
+    .habit-name {
+        font-size: 1rem;
+    }
+
+    /* run-section */
+    .run-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+
+    .run-section p {
+        margin: 1.5rem 0;
+        text-align: left;
+    }
+
+    .run-section button {
+        padding: 1rem 7.5rem;
+    }
+
+    .run-img {
+        height: 200px;
+    }
+
+    /* exercise-section */
+    .exercise-section {
+        padding: 3rem 0;
+    }
+
+    .exercise-section h2 {
+        font-size: 2.8rem;
+    }
+
+    .exercise-section p {
+        margin: 1rem 0 3rem;
+        text-align: left;
+    }
+
+    .row-1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1.3fr;
+    }
+
+    .row-2 {
+        display: grid;
+        grid-template-columns: 1.6fr 1.1fr 1.4fr;
+    }
+
+    .row-1 img,
+    .row-2 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .exercise-1,
+    .exercise-2,
+    .exercise-3,
+    .exercise-4,
+    .exercise-5,
+    .exercise-6 {
+        position: relative;
+    }
+
+
+    .exercise-1 p,
+    .exercise-3 p,
+    .exercise-5 p,
+    .exercise-6 p {
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        right: 40%;
+        font-size: 0.8rem;
+    }
+
+    .exercise-2 p {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 0.8rem;
+    }
+
+    .exercise-4 p {
+        position: absolute;
+        top: 5%;
+        left: 60%;
+        font-size: 0.8rem;
+    }
+
+    .exercise-2 {
+        position: relative;
+    }
+
+    .gradient-1 {
+        position: absolute;
+        background-color: rgba(6, 255, 210, 0.5);
+        width: 100%;
+        height: 200px;
+        top: 0;
+        left: 0;
+    }
+
+    .gradient-2 {
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0.3);
+        width: 100%;
+        height: 200px;
+        top: 0;
+        left: 0;
+    }
+
+    .gradient-3,
+    .gradient-4 {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 200px;
+        top: 0;
+        left: 0;
+    }
+
+    .gradient-5 {
+        position: absolute;
+        background-color: rgba(66, 255, 0, 0.3);
+        width: 100%;
+        height: 200px;
+        top: 0;
+        left: 0;
+    }
+
+    .gradient-6 {
+        position: absolute;
+        background-color: rgba(0, 71, 255, 0.3);
+        width: 100%;
+        height: 200px;
+        top: 0;
+        left: 0;
+    }
+
+
+
+    /* team-section */
+    .team-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+    }
+
+    .team-section p {
+        margin: 1rem 0 3rem;
+    }
+
+    .team-members {
+        background: rgb(34, 34, 34);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 1rem;
+        gap: 1rem;
+        padding: 1rem;
+
+    }
+
+    .member {
+        position: relative;
+    }
+
+    .member h3 {
+        position: absolute;
+        top: 80%;
+        left: 5%;
+    }
+
+    .member p {
+        position: absolute;
+        top: 90%;
+        left: 5%;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
+
+    .team-members img {
+
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        opacity: 0.8;
+    }
+
+    /* footer-section */
+    footer {
+        background: rgb(34, 34, 34);
+        padding: 3rem;
+        color: white;
+    }
+
+    .footer-div {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .div-1 {
+        width: 50%;
+    }
+
+    .div-1 h2 {
+        color: rgb(230, 83, 60);
+        font-size: 4rem;
+    }
+
+    .div-1 p {
+        width: 90%;
+        margin: 1rem 0;
+        text-align: left;
+    }
+
+    .div-2 {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .get-started h4 {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .get-started p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.2rem;
+        /* font-weight: 400; */
+        line-height: 2.7rem;
+        letter-spacing: 0.3px;
+        text-align: left;
+
+    }
+
+    .footer-div-p {
+        font-size: 1.1rem;
+    }
+
+    hr {
+        margin: 3rem auto;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
 }
