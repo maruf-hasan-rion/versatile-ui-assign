@@ -74,7 +74,7 @@ nav {
 
 .nav-items button {
     border-radius: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1.2rem;
     background: none;
     font-size: 1rem;
     font-weight: 500;
@@ -103,6 +103,12 @@ span {
     font-size: 6rem;
 }
 
+.download-button {
+    background: none;
+    border: 1px solid white;
+    margin-left: 1rem;
+}
+
 .header-info-right {
     background-image: url("images/Images\ 2.png");
     background-repeat: no-repeat;
@@ -111,6 +117,36 @@ span {
     width: 90%;
     height: 500px;
     margin-left: 5rem;
+    position: relative;
+}
+
+.header-info-right h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.videos {
+    position: relative;
+    width: 90%;
+    height: 500px;
+}
+
+.workout-video {
+    position: absolute;
+    padding: 1rem;
+    top: 30%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+
+.tutorial-video {
+    position: absolute;
+    padding: 2rem;
+    top: 60%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
 }
 
 /* main-section */
@@ -120,6 +156,7 @@ span {
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    padding: 3rem 0;
 }
 
 .p-width {
@@ -148,6 +185,10 @@ span {
     text-align: center;
 }
 
+.habits p {
+    line-height: 130%;
+}
+
 /* run-section */
 .run-section {
     background: rgb(34, 34, 34);
@@ -172,48 +213,141 @@ span {
 
 /* exercise-section */
 .exercise-section {
-
     padding: 3rem 0;
+}
 
+.exercise-section h2 {
+    font-size: 2.8rem;
+}
+
+.exercise-section p {
+    margin: 1rem 0 3rem;
+    text-align: left;
 }
 
 .row-1 {
     display: grid;
     grid-template-columns: 1fr 2fr 1.3fr;
+}
 
+.row-2 {
+    display: grid;
+    grid-template-columns: 1.6fr 1.1fr 1.4fr;
 }
 
 .row-1 img,
 .row-2 img {
     width: 100%;
-    height: 220px;
+    height: 200px;
 }
 
-.row-2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1.3fr;
+.exercise-1,
+.exercise-2,
+.exercise-3,
+.exercise-4,
+.exercise-5,
+.exercise-6 {
+    position: relative;
 }
+
+
+.exercise-1 p,
+.exercise-3 p,
+.exercise-5 p,
+.exercise-6 p {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    right: 40%;
+    font-size: 0.8rem;
+}
+
+.exercise-2 p {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 0.8rem;
+}
+
+.exercise-4 p {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    font-size: 0.8rem;
+}
+
+.exercise-2 {
+    position: relative;
+}
+
+.gradient-1 {
+    position: absolute;
+    background-color: rgba(6, 255, 210, 0.5);
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.gradient-2 {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.3);
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.gradient-3,
+.gradient-4 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.gradient-5 {
+    position: absolute;
+    background-color: rgba(66, 255, 0, 0.3);
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.gradient-6 {
+    position: absolute;
+    background-color: rgba(0, 71, 255, 0.3);
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+
 
 /* team-section */
 .team-section {
-    background: rgb(34, 34, 34);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 15rem; */
-    padding: 3rem;
-    border-radius: 1rem;
+    padding: 5rem 0;
 }
 
 .team-section p {
-    margin-bottom: 3rem;
-    /* text-align: left; */
+    margin: 1rem 0 3rem;
 }
 
 .team-members {
+    background: rgb(34, 34, 34);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1rem;
 
 }
 
@@ -223,13 +357,13 @@ span {
 
 .member h3 {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 5%;
 }
 
 .member p {
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 5%;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
@@ -240,8 +374,8 @@ span {
 
 .team-members img {
 
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 1rem;
     opacity: 0.8;
 }
@@ -251,13 +385,11 @@ footer {
     background: rgb(34, 34, 34);
     padding: 3rem;
     color: white;
-    /* margin-top: 3rem; */
 }
 
 .footer-div {
     display: flex;
-    gap: 10rem;
-    /* justify-content: flex-start; */
+    gap: 5rem;
 }
 
 .div-1 {
@@ -270,6 +402,7 @@ footer {
 }
 
 .div-1 p {
+    width: 90%;
     margin: 1rem 0;
     text-align: left;
 }
@@ -281,15 +414,15 @@ footer {
 }
 
 .get-started h4 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 2rem;
 }
 
 .get-started p {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1.3rem;
-    font-weight: 400;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    /* font-weight: 400; */
+    line-height: 2.7rem;
     letter-spacing: 0.3px;
     text-align: left;
 
