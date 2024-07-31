@@ -148,12 +148,11 @@ span {
     position: absolute;
     padding: 0.8rem 1rem;
     top: 75%;
-    /* left: 10%; */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.8rem;
 
 }
 
@@ -162,8 +161,8 @@ span {
 }
 
 .red-circle {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background: rgb(230, 83, 60);
     border-radius: 50%;
 }
@@ -468,7 +467,7 @@ hr {
     }
 
     nav {
-        padding: 1rem;
+        padding: 3rem 1rem 2rem;
     }
 
     .nav-items {
@@ -560,6 +559,11 @@ hr {
         margin: 0 1rem;
     }
 
+    .run-section h2 {
+        font-size: 1.8rem;
+        width: 60%;
+    }
+
     .run-section p {
         margin: 1.5rem 0;
         text-align: left;
@@ -575,228 +579,120 @@ hr {
 
     /* exercise-section */
     .exercise-section {
-        padding: 3rem 0;
+        padding: 3rem 1rem;
     }
 
     .exercise-section h2 {
-        font-size: 2.8rem;
-    }
-
-    .exercise-section p {
-        margin: 1rem 0 3rem;
-        text-align: left;
+        font-size: 2rem;
+        width: 60%;
     }
 
     .row-1 {
         display: grid;
-        grid-template-columns: 1fr 2fr 1.3fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .row-2 {
         display: grid;
-        grid-template-columns: 1.6fr 1.1fr 1.4fr;
+        grid-template-columns: 1fr 1.2fr;
     }
 
     .row-1 img,
     .row-2 img {
-        width: 100%;
-        height: 200px;
+        height: 120px;
     }
 
-    .exercise-1,
-    .exercise-2,
     .exercise-3,
-    .exercise-4,
-    .exercise-5,
     .exercise-6 {
-        position: relative;
-    }
-
-
-    .exercise-1 p,
-    .exercise-3 p,
-    .exercise-5 p,
-    .exercise-6 p {
-        position: absolute;
-        top: 65%;
-        left: 10%;
-        right: 40%;
-        font-size: 0.8rem;
+        display: none;
     }
 
     .exercise-2 p {
-        position: absolute;
         top: 5%;
+        left: 20%;
+    }
+
+    .exercise-4 p,
+    .exercise-5 p {
+        top: 50%;
         left: 5%;
-        font-size: 0.8rem;
+        right: 0%;
     }
 
-    .exercise-4 p {
-        position: absolute;
-        top: 5%;
-        left: 60%;
-        font-size: 0.8rem;
-    }
-
-    .exercise-2 {
-        position: relative;
-    }
-
-    .gradient-1 {
-        position: absolute;
-        background-color: rgba(6, 255, 210, 0.5);
-        width: 100%;
-        height: 200px;
-        top: 0;
-        left: 0;
-    }
-
-    .gradient-2 {
-        position: absolute;
-        background-color: rgba(255, 0, 0, 0.3);
-        width: 100%;
-        height: 200px;
-        top: 0;
-        left: 0;
-    }
-
-    .gradient-3,
-    .gradient-4 {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 200px;
-        top: 0;
-        left: 0;
-    }
-
+    .gradient-1,
+    .gradient-2,
     .gradient-5 {
-        position: absolute;
-        background-color: rgba(66, 255, 0, 0.3);
-        width: 100%;
-        height: 200px;
-        top: 0;
-        left: 0;
+        height: 120px;
     }
 
-    .gradient-6 {
-        position: absolute;
-        background-color: rgba(0, 71, 255, 0.3);
-        width: 100%;
+    .gradient-4 {
         height: 200px;
-        top: 0;
-        left: 0;
     }
-
-
 
     /* team-section */
     .team-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 5rem 0;
+        padding: 2rem 0;
+    }
+
+    .team-section h2 {
+        font-size: 1.8rem;
     }
 
     .team-section p {
-        margin: 1rem 0 3rem;
+        margin: 1rem 0 2rem;
     }
 
     .team-members {
-        background: rgb(34, 34, 34);
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        border-radius: 1rem;
-        gap: 1rem;
-        padding: 1rem;
-
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
     }
 
-    .member {
-        position: relative;
-    }
-
-    .member h3 {
-        position: absolute;
-        top: 80%;
-        left: 5%;
+    #member-1,
+    #member-4,
+    #member-5 {
+        display: none;
     }
 
     .member p {
-        position: absolute;
-        top: 90%;
+        top: 82%;
         left: 5%;
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 0.8rem;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.3px;
-    }
-
-    .team-members img {
-
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem;
-        opacity: 0.8;
     }
 
     /* footer-section */
     footer {
-        background: rgb(34, 34, 34);
-        padding: 3rem;
-        color: white;
+        padding: 3rem 1rem;
     }
 
     .footer-div {
-        display: flex;
-        gap: 5rem;
+        flex-direction: column;
+        gap: 0;
     }
 
     .div-1 {
-        width: 50%;
-    }
-
-    .div-1 h2 {
-        color: rgb(230, 83, 60);
-        font-size: 4rem;
+        width: 80%;
     }
 
     .div-1 p {
-        width: 90%;
-        margin: 1rem 0;
-        text-align: left;
+        width: 100%;
     }
 
     .div-2 {
-        display: flex;
-        width: 50%;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     .get-started h4 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-bottom: 2rem;
     }
 
     .get-started p {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 1.2rem;
-        /* font-weight: 400; */
-        line-height: 2.7rem;
-        letter-spacing: 0.3px;
-        text-align: left;
+        font-size: 1.1rem;
+        line-height: 2rem;
 
     }
 
     .footer-div-p {
-        font-size: 1.1rem;
-    }
-
-    hr {
-        margin: 3rem auto;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
     }
 
 }
