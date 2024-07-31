@@ -344,7 +344,77 @@ span {
     left: 0;
 }
 
+/* BMI-section */
+.BMI-section-description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20rem;
+    padding: 2rem 3rem 5rem;
+}
 
+.BMI-section-description h2,
+.BMI-section-description p {
+    text-align: left;
+}
+
+.BMI-calculate-div {
+    background: rgb(34, 34, 34);
+    padding: 3rem;
+    color: white;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid gray;
+    padding: 0.5rem 1.5rem;
+    text-align: left;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    /* text-align: center; */
+}
+
+.BMI-div {
+    display: flex;
+}
+
+.BMI-div-1 {
+    width: 40%;
+}
+
+.BMI-div-1 h3 {
+    font-size: 1.7rem;
+    padding: 0 0 3rem;
+}
+
+.BMI-div-2 {
+    width: 50%;
+}
+
+.BMI-div-2 h3 {
+    font-size: 1.7rem;
+}
+
+.BMI-div-2 p {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+input {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
 
 /* team-section */
 .team-section {
