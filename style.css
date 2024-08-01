@@ -142,6 +142,7 @@ span {
     left: 60%;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
+    backdrop-filter: blur(10px);
 }
 
 .tutorial-video {
@@ -153,6 +154,7 @@ span {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    backdrop-filter: blur(10px);
 
 }
 
@@ -768,6 +770,10 @@ hr {
         margin-top: 2rem;
     }
 
+    .BMI-div-2 p {
+        margin-right: 5rem;
+    }
+
     input {
         width: 37%;
     }
@@ -800,8 +806,7 @@ hr {
     }
 
     #member-1,
-    #member-4,
-    #member-5 {
+    #member-4 {
         display: none;
     }
 
