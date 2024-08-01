@@ -371,7 +371,7 @@ table {
 td,
 th {
     border: 1px solid gray;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.2rem;
     text-align: left;
 }
 
@@ -381,15 +381,15 @@ td {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
-    /* text-align: center; */
 }
 
 .BMI-div {
     display: flex;
+    justify-content: space-between;
 }
 
 .BMI-div-1 {
-    width: 40%;
+    width: 30%;
 }
 
 .BMI-div-1 h3 {
@@ -398,7 +398,7 @@ td {
 }
 
 .BMI-div-2 {
-    width: 50%;
+    width: 55%;
 }
 
 .BMI-div-2 h3 {
@@ -411,9 +411,41 @@ td {
 }
 
 input {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40%;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: none;
+    margin: 0.5rem 0.8rem 0rem 0;
+
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#sex {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 46%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.8rem 0.8rem 0rem 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#activity {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 95%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.8rem 0.8rem 0rem 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.BMI-div-2 button {
+    margin-top: 2rem;
 }
 
 /* team-section */
@@ -451,7 +483,7 @@ input {
 
 .member p {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 5%;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
@@ -465,7 +497,7 @@ input {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
-    opacity: 0.8;
+    filter: brightness(80%);
 }
 
 /* footer-section */
@@ -696,7 +728,57 @@ hr {
     }
 
     .gradient-4 {
-        height: 200px;
+        height: 120px;
+    }
+
+    /* BMI-section */
+    .BMI-section-description {
+        margin: 0rem;
+        padding: 0rem 5rem 2rem 1rem;
+    }
+
+    .BMI-section-description h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .BMI-calculate-div {
+        padding: 1rem;
+    }
+
+    .BMI-div {
+        flex-direction: column;
+    }
+
+    .BMI-div-1 {
+        width: 100%;
+    }
+
+    .BMI-div-1 h3 {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    .BMI-div-2 {
+        width: 100%;
+    }
+
+    .BMI-div-2 h3 {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    input {
+        width: 37%;
+    }
+
+    #activity {
+        margin-bottom: 1rem;
+    }
+
+    .BMI-div-2 button {
+        margin: 1rem 0;
+        padding: 1rem 4rem;
     }
 
     /* team-section */
